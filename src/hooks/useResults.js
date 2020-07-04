@@ -23,7 +23,7 @@ export default () => {
   };
 
   useEffect(() => {
-    searchApi('vegan');
+    searchApi('vegetarian');
   }, []);
 
   return [searchApi, results, errorMessage];

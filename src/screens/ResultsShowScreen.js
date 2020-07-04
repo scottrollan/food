@@ -19,7 +19,6 @@ const ResultsShowScreen = ({ navigation }) => {
   const getResult = async (id) => {
     const response = await yelp.get(`/${id}`);
     setResult(response.data);
-    console.log(response.image_url);
   };
 
   const dialCall = (number) => {
@@ -67,7 +66,7 @@ const ResultsShowScreen = ({ navigation }) => {
       <TouchableOpacity style={styles.touchable} onPress={() => goToPage()}>
         <Text style={styles.info}>
           see us on yelp
-          <FontAwesome name="yelp" color="#D32323" />
+          <FontAwesome name="yelp" size={20} color="#D32323" />
         </Text>
       </TouchableOpacity>
       <FlatList
